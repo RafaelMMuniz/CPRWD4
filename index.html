@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cp</title>
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="task">
+        <h1>Lista de Tarefas</h1>
+        <form action="#" method="get" class="form">
+            <fieldset>
+                <legend>Cadastro de Tarefas</legend>
+
+                    <label for="idDesc">Descrição</label>
+                    <input type="text" name="descricao" id="idDesc" placeholder="Digite a descrição da nova Tarefa.">
+
+                    <label for="idAutor">Autor</label>
+                    <input type="text" name="Autor" id="idAutor" placeholder="Digite o nome do autor.">
+
+                    <label for="idDep">Departamento</label>
+                    <input type="text" name="Departamento" id="idDep" placeholder="Digite o nome do Departamento.">
+
+                    <label for="idImport">Importancia</label>
+                    <input type="number" name="Import" id="idImport" max="5">
+                    <div id="mensagemErro" class="erro" style="display: none;"></div>
+
+                    <div class="botao">
+                        <button type="submit" id="btnAddTarefa">Adicionar</button>
+                        <button type="submit" id="btnDec">Ordenar por mais importante</button>
+                        <button type="submit" id="btnCresc">Ordenar por menos importante</button>
+                    </div>
+            </fieldset>
+        </form>
+    </div>
+    <section id="tabela">
+        <table>
+          <thead>
+            <tr>
+              <th>Descrição</th>
+              <th>Autor</th>
+              <th>Departamento</th>
+              <th>Importância</th>
+              <th>Duração</th>
+              <th>Valor</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+</body>
+</html>
